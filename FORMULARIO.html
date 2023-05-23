@@ -1,10 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<!Doctype HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <h1>style="color:red;font-family:time new roman;">FORMULARIO</h1>
+    </head>
+    <body>
+        <h2>Ingreso de Datos Personales:</h2>
+        <form>
+            <div>
+                <fieldset>
+                    <h3 style="color:green;font-family:Arial;">Datos Personales</h3>
+                        <label for="Nombres">Nombres:</label><br>
+                        <input type="text" id="Nombres" name="Nombres">
+                        <br>
+                        <label for="Apellidos">Apellidos:</label><br>
+                        <input type="text" id="apellidos" name="apellidos">
+                        <br>
+                        <label for="N° cédula">N° cédula:</label><br>
+                        <input type="text" id="N° cédula" name="N° cédula" maxlength="10">
+                        <br>
+                        <label for="correo electrónico">Correo electrónico:</label><br>
+                        <input type="text" id="correo electrónico" name="correo electrónico">
+                </fieldset>
 
-</body>
-</html>
+            </div>
+            <br>
+            <div>
+                <fieldset>
+                    <h3 style="color:purple;font-family:Broadway;">Encuesta</h3>
+                    <br>
+                    <label for="pc">Tipo de dispositivo para conectarse a clases:</label><br>
+                    <input type="checkbox" id="pc" name="pc" value="pc">
+                    <label for="laptop"> Computadora de escritorio</label><br>
+                    <input type="checkbox" id="laptop" name="laptop" value="laptop">
+                    <label for="Laptop"> Laptop</label><br>
+                    <input type="checkbox" id="tablet" name="tablet" value="tablet">
+                    <label for="tablet"> Tablet</label><br>
+                    <input type="checkbox" id="celular" name="celular" value="celular">
+                    <label for="celular"> Celular</label><br>
+                </fieldset>
+            </div>
+            <br>
+            <div>
+                <fieldset>
+                <label for="días">Días de clases asincrónicos:</label>
+                <select id="días" name="días">
+                <option value="1">Martes</option>
+                <option value="2">Viernes</option>
+                <option value="3">Miércoles</option>
+                <option value="4">Ninguno</option>
+                </select>
+                </fieldset>
+                <br>
+                <input type="submit">
